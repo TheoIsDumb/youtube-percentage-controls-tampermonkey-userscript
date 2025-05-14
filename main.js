@@ -49,7 +49,7 @@
 
     setInterval(() => {
         if (video && video.duration > 0) {
-            percentageDisplay.textContent = (video.currentTime / video.duration).toFixed(2) * 100 + "%";
+	    percentageDisplay.textContent = Math.round((video.currentTime / video.duration) * 100) + "%";
         }
     }, 1000);
 })();
