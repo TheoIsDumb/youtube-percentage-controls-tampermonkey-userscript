@@ -12,6 +12,8 @@
     'use strict';
 
     const video = document.querySelector('video');
+    document.querySelector('ytd-app').style.paddingTop = '5rem';
+    document.querySelector('div#masthead-container').style.paddingTop = '6rem';
 
     const container = document.createElement('div');
     container.className = "info";
